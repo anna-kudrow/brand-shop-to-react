@@ -1,0 +1,24 @@
+@mixin dropdown-text() {
+  font-family: "Lato-400";
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.025em;
+  color: #4f4f4f;
+}
+
+@mixin dropdown-title() {
+  font-family: "Lato-400";
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+}
+
+@mixin field-text() {
+  font-family: "Lato-300";
+  font-size: 13px;
+  line-height: 1.2;
+  color: #b1b1b1;
+  // padding-left: 18px;
+}

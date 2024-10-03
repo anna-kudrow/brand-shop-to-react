@@ -1,0 +1,28 @@
+@import './vars.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $white;
+  font-family: "Lato-400", sans-serif;
+  color: $text;
+}
+
+.center {
+  padding-left: calc(50% - 572px);
+  padding-right: calc(50% - 572px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: $accent-color;
+  border: transparent;
+  color: $white;
+}
