@@ -134,13 +134,13 @@ export const Header = () => {
 								<p className="total-text__amount"></p>
 							</div>
 							<div className="purchase__buttons">
-								<a
+								<Link
+									to={'/checkout'}
 									className="purchase__button"
-									href="checkout.html"
 									type="button"
 								>
 									Checkout
-								</a>
+								</Link>
 								<a
 									className="purchase__button"
 									href="checkout.html"

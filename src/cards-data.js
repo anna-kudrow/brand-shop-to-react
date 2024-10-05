@@ -1,4 +1,4 @@
-export const data = [
+export const indexCatalog = [
 	{
 		id: 1,
 		src: 'images/prod_cart1.jpg',

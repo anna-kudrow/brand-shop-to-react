@@ -1,5 +1,5 @@
 import './ProductsList.scss';
-import { data } from '../../../../cards-data';
+import { indexCatalog } from '../../../../cards-data';
 import { ProductCard } from '../ProductCard/ProductCard';
 
 export default function ProductsList() {
@@ -12,7 +12,7 @@ export default function ProductsList() {
 				</p>
 			</div>
 			<div className="products__cards center">
-				{data.map((card) => (
+				{indexCatalog.map((card) => (
 					<ProductCard key={card.id} item={card} />
 				))}
 			</div>
