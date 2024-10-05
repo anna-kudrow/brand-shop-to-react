@@ -1,36 +1,37 @@
 @import '../../../../vars.scss';
+@import '../../../../fonts.scss';
 
 .intro {
-  background-image: url("../images/bg_top.png");
-  height: 613px;
-  display: flex;
-  align-items: center;
+	background-image: url('../images/bg_top.png');
+	height: 613px;
+	display: flex;
+	align-items: center;
 
-  &__moto {
-    display: flex;
-    gap: 12px;
-    top: 400px;
-    align-items: center;
-    & img {
-      height: 100px;
-    }
-  }
+	&__moto {
+		display: flex;
+		gap: 12px;
+		top: 400px;
+		align-items: center;
+		& img {
+			height: 100px;
+		}
+	}
 
-  &__moto-text {
-    font-family: "Lato-900";
-    font-weight: 900;
-    letter-spacing: 0.025em;
-  }
+	&__moto-text {
+		font-family: 'Lato-900';
+		font-weight: 900;
+		letter-spacing: 0.025em;
+	}
 }
 
 .moto-up-text {
-  font-size: 60px;
+	font-size: 60px;
 }
 
 .moto-down-text {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .moto-down-text--colored {
-  color: $accent-color;
+	color: $accent-color;
 }

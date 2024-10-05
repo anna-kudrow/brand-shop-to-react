@@ -1,0 +1,104 @@
+@import '../../vars.scss';
+@import '../../fonts.scss';
+
+.subscribe {
+	background-image: url('../images/subscriibe_bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 438px;
+
+	&-content {
+		max-width: 2000px;
+		display: flex;
+	}
+
+	&__reviews {
+		display: flex;
+		gap: 28px;
+		width: 50%;
+		margin-top: 111px;
+	}
+
+	&__subscribtion {
+		width: 50%;
+		padding-top: 148px;
+		padding-bottom: 168px;
+		border-left: 1px solid white;
+	}
+}
+
+.reviewer {
+	&__photo {
+		border-radius: 50%;
+		width: 83px;
+		height: 83px;
+	}
+
+	&__name {
+		font-family: 'Lato-700';
+		font-size: 16px;
+		letter-spacing: 0.025em;
+		color: $accent-color;
+	}
+
+	&__city {
+		font-family: 'Lato-300';
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 300;
+		color: $dark-color;
+	}
+}
+
+.review {
+	&__text {
+		width: 386px;
+		font-family: 'Lato-400-italic';
+		font-size: 16px;
+		line-height: 26px;
+		letter-spacing: 0.025em;
+		color: $dark-color;
+		margin-bottom: 19px;
+	}
+
+	&__content {
+		margin-top: 12px;
+	}
+}
+
+.subscribtion {
+	&__title {
+		text-align: center;
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		color: $dark-color;
+		margin-bottom: 35px;
+		border-radius: 23px;
+	}
+
+	&__subtitle {
+		font-size: 14px;
+		line-height: 24px;
+		text-transform: none;
+	}
+
+	&__form {
+		display: flex;
+		margin-left: 92px;
+	}
+
+	&__field {
+		height: 46px;
+		border: none;
+		background-color: #e1e1e1;
+		border-radius: 23px 0 0 23px;
+		padding: 0 28px;
+		width: 226px;
+	}
+
+	&__button {
+		padding: 0 21px 0 20px;
+		border-radius: 0 23px 23px 0;
+	}
+}

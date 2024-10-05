@@ -1,135 +1,136 @@
 @import '../../../../vars.scss';
+@import '../../../../fonts.scss';
 
 .products {
-  padding-top: 100px;
-  padding-bottom: 113px;
+	padding-top: 100px;
+	padding-bottom: 113px;
 
-  &__info {
-    margin-bottom: 60px;
-  }
+	&__info {
+		margin-bottom: 60px;
+	}
 
-  &__title {
-    font-family: "Lato-700";
-    font-size: 30px;
-    line-height: 54px;
-    letter-spacing: 0.025em;
-    text-align: center;
-  }
+	&__title {
+		font-family: 'Lato-700';
+		font-size: 30px;
+		line-height: 54px;
+		letter-spacing: 0.025em;
+		text-align: center;
+	}
 
-  &__text {
-    font-size: 14px;
-    letter-spacing: 0.025em;
-    color: #9f9f9f;
-    text-align: center;
-  }
+	&__text {
+		font-size: 14px;
+		letter-spacing: 0.025em;
+		color: #9f9f9f;
+		text-align: center;
+	}
 
-  &__cards {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 33px;
-    row-gap: 39px;
-    margin-bottom: 58px;
-  }
+	&__cards {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 33px;
+		row-gap: 39px;
+		margin-bottom: 58px;
+	}
 
-  &__link {
-    display: block;
-    text-align: center;
-    padding: 18px 20px 19px 24px;
-  }
+	&__link {
+		display: block;
+		text-align: center;
+		padding: 18px 20px 19px 24px;
+	}
 
-  &__link-button {
-    display: flex;
-    justify-content: center;
-    font-family: "Lato-700";
-    font-size: 16px;
-    line-height: 54px;
-    letter-spacing: 0.025em;
-    width: 212px;
-    margin: 0 auto;
-  }
+	&__link-button {
+		display: flex;
+		justify-content: center;
+		font-family: 'Lato-700';
+		font-size: 16px;
+		line-height: 54px;
+		letter-spacing: 0.025em;
+		width: 212px;
+		margin: 0 auto;
+	}
 
-  &__button-wrapper {
-    display: flex;
-    gap: 9px;
-    align-items: center;
-  }
+	&__button-wrapper {
+		display: flex;
+		gap: 9px;
+		align-items: center;
+	}
 }
 
 .product__card {
-  max-width: 261px;
-  position: relative;
+	max-width: 261px;
+	position: relative;
 }
 
 .product__card:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
-  .add-box {
-    display: flex;
-  }
-  .card__img {
-    filter: brightness(0.3);
-  }
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+	.add-box {
+		display: flex;
+	}
+	.card__img {
+		filter: brightness(0.3);
+	}
 }
 
 .card {
-  &__name {
-    font-size: 13px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: $text;
-    margin-bottom: 17px;
-    margin-left: 15px;
-  }
+	&__name {
+		font-size: 13px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		color: $text;
+		margin-bottom: 17px;
+		margin-left: 15px;
+	}
 
-  &__price {
-    font-family: "Lato-700";
-    font-size: 16px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: $accent-color;
-    margin-left: 15px;
-    margin-bottom: 21px;
-  }
+	&__price {
+		font-family: 'Lato-700';
+		font-size: 16px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		color: $accent-color;
+		margin-left: 15px;
+		margin-bottom: 21px;
+	}
 
-  &__img {
-    margin-bottom: 19px;
-  }
+	&__img {
+		margin-bottom: 19px;
+	}
 
-  &__descrip {
-    font-size: 13px;
-    line-height: 1.2;
-    color: #222222;
-    margin-bottom: 17px;
-    margin-left: 15px;
-  }
+	&__descrip {
+		font-size: 13px;
+		line-height: 1.2;
+		color: #222222;
+		margin-bottom: 17px;
+		margin-left: 15px;
+	}
 }
 
 .add {
-  &-box {
-    position: absolute;
-    top: 98px;
-    width: 100%;
-    justify-content: space-around;
-    pointer-events: none;
-    display: none;
-  }
+	&-box {
+		position: absolute;
+		top: 98px;
+		width: 100%;
+		justify-content: space-around;
+		pointer-events: none;
+		display: none;
+	}
 
-  &-button {
-    display: flex;
-    gap: 8px;
-    padding: 10px 13px 7px 12px;
-    border: 1px solid $white;
-    align-items: center;
-    pointer-events: all;
-    background-color: transparent;
-  }
+	&-button {
+		display: flex;
+		gap: 8px;
+		padding: 10px 13px 7px 12px;
+		border: 1px solid $white;
+		align-items: center;
+		pointer-events: all;
+		background-color: transparent;
+	}
 
-  &-button:hover {
-    box-shadow: 0 0 10px 0 $white;
-  }
-  &-text {
-    font-family: "Lato-700";
-    font-size: 13px;
-    line-height: 1.2;
-    color: $white;
-  }
+	&-button:hover {
+		box-shadow: 0 0 10px 0 $white;
+	}
+	&-text {
+		font-family: 'Lato-700';
+		font-size: 13px;
+		line-height: 1.2;
+		color: $white;
+	}
 }

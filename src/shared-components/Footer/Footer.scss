@@ -1,0 +1,41 @@
+@import '../../vars.scss';
+@import '../../fonts.scss';
+
+.footer {
+	background-color: $border-lighter-color;
+	padding-top: 24px;
+	padding-bottom: 23px;
+
+	&-content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__copyright {
+		font-size: 16px;
+		line-height: 42px;
+		letter-spacing: 0.025em;
+		color: #7a7a7a;
+	}
+
+	&__medias {
+		display: flex;
+		gap: 8px;
+	}
+}
+
+.media__link {
+	width: 32px;
+	height: 32px;
+	background-color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.media__link:hover {
+	background-color: $accent-color;
+	& path {
+		fill: $white;
+	}
+}
