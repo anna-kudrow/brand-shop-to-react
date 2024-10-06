@@ -1,6 +1,10 @@
+import { useSelector } from 'react-redux';
 import './ShoppingCard.scss';
+import { Purchase } from './Purchase/Purchase';
 
 export const ShoppingCard = () => {
+	const purchases = useSelector((state) => state.purchases.purchasesList);
+
 	return (
 		<>
 			<section className="shopping">
@@ -14,7 +18,11 @@ export const ShoppingCard = () => {
 							<p className="shopping__title">Subtotal</p>
 							<p className="shopping__title">ACTION</p>
 						</div>
-						<div className="shopping__item shopping__grid">
+						{purchases.map((purchase) => (
+							<Purchase key={purchase.id} item={purchase} />
+						))}
+
+						{/* <div className="shopping__item shopping__grid">
 							<div className="grid__left">
 								<a href="#" className="shopping__link">
 									<img src="images/shopping1.png" alt="black jacket" />
@@ -94,7 +102,7 @@ export const ShoppingCard = () => {
 								src="images/cancel.jpg"
 								alt="cancel"
 							/>
-						</div>
+						</div> */}
 					</div>
 					<div className="shopping__buttons">
 						<button className="shopping__button" type="reset">
@@ -103,6 +111,7 @@ export const ShoppingCard = () => {
 						<button className="shopping__button" type="button">
 							cONTINUE sHOPPING
 						</button>
+						<p>TOTAL: </p>
 					</div>
 					<div className="shopping__information">
 						<div className="information__box">

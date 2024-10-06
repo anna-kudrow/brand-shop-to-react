@@ -1,3 +1,5 @@
+import { menCatalog } from '../../../../cards-data';
+import { ProductCard } from '../../../../shared-components/ProductCard/ProductCard';
 import './MenProductsList.scss';
 
 export const MenProductsList = () => {
@@ -75,7 +77,6 @@ export const MenProductsList = () => {
 							</li>
 						</ul>
 					</details>
-
 					<details className="man-products-sorted__details">
 						<summary className="man-products-sorted__summary">BRAND</summary>
 						<ul className="man-products-sorted__details-list">
@@ -146,7 +147,6 @@ export const MenProductsList = () => {
 							</li>
 						</ul>
 					</details>
-
 					<details className="man-products-sorted__details">
 						<summary className="man-products-sorted__summary">dESIGNER</summary>
 						<ul className="man-products-sorted__details-list">
@@ -312,178 +312,9 @@ export const MenProductsList = () => {
 						</div>
 					</div>
 					<div className="products__cards">
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart1.jpg"
-									alt="white t-short with print"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart1.jpg"
-									alt="white t-short with print"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart3.jpg"
-									alt="dark blue jacket"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart1.jpg"
-									alt="white t-short with print"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart1.jpg"
-									alt="white t-short with print"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart6.jpg"
-									alt="grey jacket"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart7.jpg"
-									alt="bej jeans"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart8.jpg"
-									alt="dark hoody"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
-						<div className="product__card">
-							<a href="111" className="product__card-link">
-								<img
-									className="card__img"
-									src="images/prod_cart8.jpg"
-									alt="dark hoody"
-								/>
-								<div className="card__text-wrapper">
-									<p className="card__name">Mango People T-shirt</p>
-									<p className="card__price">$52.00</p>
-								</div>
-							</a>
-							<div className="add-box">
-								<a href="222" className="add-link">
-									<img src="images/add.svg" alt="add product icon" />
-									<p className="add-text">Add to Cart</p>
-								</a>
-							</div>
-						</div>
+						{menCatalog.map((card) => (
+							<ProductCard key={card.id} item={card} />
+						))}
 					</div>
 				</div>
 			</div>

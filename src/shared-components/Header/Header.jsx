@@ -141,13 +141,13 @@ export const Header = () => {
 								>
 									Checkout
 								</Link>
-								<a
+								<Link
+									to={'/shopping-card'}
 									className="purchase__button"
-									href="checkout.html"
 									type="button"
 								>
 									Go to cart
-								</a>
+								</Link>
 							</div>
 						</div>
 					</details>

@@ -1,4 +1,13 @@
+import { useDispatch } from 'react-redux';
+import { addPurchase } from '../../store/purchases.slice';
+
 export const ProductCard = ({ item }) => {
+	const dispatch = useDispatch();
+
+	const handleAddClick = () => {
+		dispatch(addPurchase(item));
+	};
+
 	return (
 		<div id={item.id} className="product__card">
 			<a href="111" className="product__card-link">
@@ -14,7 +23,7 @@ export const ProductCard = ({ item }) => {
 				</div>
 			</a>
 			<div className="add-box">
-				<button className="add-button">
+				<button onClick={handleAddClick} className="add-button">
 					<img src="images/add.svg" alt="add product icon" />
 					<p className="add-text">Add to Cart</p>
 				</button>

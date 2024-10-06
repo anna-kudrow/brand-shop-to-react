@@ -1,6 +1,6 @@
 import './ProductsList.scss';
 import { indexCatalog } from '../../../../cards-data';
-import { ProductCard } from '../ProductCard/ProductCard';
+import { ProductCard } from '../../../../shared-components/ProductCard/ProductCard';
 
 export default function ProductsList() {
 	return (
